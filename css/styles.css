@@ -424,7 +424,9 @@ height: 20px;
 }
 
 .clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-link:focus .clients-icon,
+.close-btn:hover .close,
+.close-btn:focus .close{
   fill: var(--accent-color);
   
 }
@@ -541,6 +543,7 @@ height: 20px;
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.250;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .footer-button {
       font-weight: 700;
@@ -560,6 +563,7 @@ height: 20px;
   padding: 10px 29px;
   border: 1px solid transparent;
  margin-left: 12px; 
+
 }
 
 .icon-send {
@@ -640,7 +644,8 @@ margin-bottom: 12px;
   margin-bottom: 10px;
 }
 .modal-form-input:focus,
-.modal-form-msg:focus {
+.modal-form-msg:focus,
+.form-email-field:focus {
   outline: none;
   border-color: var(--accent-color); 
   cursor: pointer;
@@ -664,6 +669,7 @@ margin-bottom: 12px;
 box-sizing: border-box;
 border-radius: 50%;
 cursor: pointer;
+display: flex;
 align-items: center;
 justify-content: center;
 
@@ -673,6 +679,7 @@ justify-content: center;
   fill: #000000;
   width: 18px;
   height: 18px;
+  
 }
 
 .modal-form-msg {
@@ -769,7 +776,18 @@ transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  
+::placeholder {
+  font-family: var(--main-font);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.250;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 
+
+}
 /*===========END BACKDROP=========*/
 
 /*================== PORTFOLIO==========*/
